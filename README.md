@@ -25,6 +25,18 @@ bash ~/.claude/skills/ad-research/install.sh
 ```
 更新: `cd ~/.claude/skills/ad-research && git pull`。前提: Node.js 18+（Chromiumはinstall.shが導入）。
 
+### ZIPで配布/インストール（git不要）
+
+git を使わない人向け。[Releases](https://github.com/FP-sudo/ad-research/releases) から `ad-research.zip` をダウンロードして:
+
+```bash
+# 解凍すると ad-research/ フォルダができる → スキル置き場へ展開
+unzip ad-research.zip -d ~/.claude/skills/
+bash ~/.claude/skills/ad-research/install.sh
+```
+
+ZIPには `node_modules` は含まれません（容量とOS依存のため）。`install.sh` が Playwright/Chromium を入れます。**MCP不要・ログイン不要**は同じ。
+
 ## 使い方
 
 ```
