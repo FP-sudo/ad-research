@@ -10,6 +10,14 @@
 
 > 旧 `youtube-ad-research` と `meta-ad-research` を統合したもの（両旧リポはアーカイブ）。
 
+## ✅ 動作条件（MCP不要・ログイン不要）
+
+このスキルは **MCP連携なし・APIキーなし・Facebookログインなしで動きます**。Meta広告ライブラリ／Google透明性センターの**公開サイト**を Playwright で読むだけです。
+
+- 必要なのは **Node.js 18+ だけ**（Chromium は `install.sh` が自動導入）。
+- Meta Ads MCP やトークンは**一切不要**。
+- `firecrawl` MCP は **完全に任意**（Mode Y の web探索を使う時だけの補助。無くても全機能が動く）。
+
 ## インストール（GitHub経由）
 ```bash
 git clone https://github.com/FP-sudo/ad-research.git ~/.claude/skills/ad-research
